@@ -59,10 +59,7 @@ const Cards = ({ item, index, moveItem, status }) => {
         ref={ref}
         style={{ opacity: isDragging ? 0 : 1 }}
         className={"item"}
-        onClick={() => {
-          console.log("asdasd");
-          onOpen();
-        }}
+        onClick={onOpen}
       >
         <StatusBar backgroundColor={status.color} />
         <p className={"item-title"}>{item.content}</p>

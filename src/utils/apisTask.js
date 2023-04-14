@@ -2,7 +2,6 @@ import { data } from "../data";
 
 export const getTask = async () => {
   const tasks = JSON.parse(localStorage.getItem("tasks") || "");
-  console.log(tasks);
   try {
     return [...data, ...tasks];
   } catch (error) {

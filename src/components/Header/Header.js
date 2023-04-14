@@ -6,8 +6,6 @@ import FormToCreate from "../FormToCreate/FormToCreate";
 export default function Header() {
   const [show, setShow] = useState(false);
   const onClose = () => setShow(false);
-  console.log(show);
-
   return (
     <>
       <HeaderApp>
